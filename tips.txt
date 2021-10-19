@@ -1,0 +1,1 @@
+pra usar o process.env é preciso instalar: yarn add dotenv;
