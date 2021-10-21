@@ -1,0 +1,50 @@
+Guilherme Capitão — 18/10/2021
+:arrow: Erro: listen EADDRINUSE :::4000
+
+Quando esse erro acontecer, é porque a porta já está em uso. Para resolver isso você pode executar o comando:
+
+Para Linux:
+pkill -9 node
+
+Para Windows (Powershell/Windows Terminal em modo administrador):
+taskkill /f /im node.exe
+Guilherme Capitão — 18/10/2021
+:arrow: Erro: O arquivo script.ps1 não pode ser carregado porque a execução de scripts foi desabilitada neste sistema
+
+Para resolver esse problema, rode o comando abaixo no Powershell ou Windows Terminal em modo administrador.
+
+Set-ExecutionPolicy RemoteSigned
+
+Ele dará algumas opções para escolher, responda A para aplicar para todos e dê um enter.
+
+
+Guilherme Capitão — 18/10/2021
+:arrow: Essa é a tag script que você pode usar para importar o Socket.io via CDN da cloudflare:
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.min.js"
+    integrity="sha512-N5JbZMETkl+0SZh5l8OA2VxSfF120owfQyy54iAXTJIKuqAn3A9TrNz1ypB55o8aSU5MxaodEgv74wGUvgUynQ=="
+    crossorigin="anonymous"
+  ></script>
+ 
+
+Guilherme Capitão — 18/10/2021
+:arrow: Erro: Property 'message' does not exist on type 'PrismaClient<PrismaClientOptions, never, Reject...
+
+Rode os seguintes comandos: 
+
+1 - yarn prisma migrate reset
+
+2 - yarn add @prisma/client ou npm install @prisma/client
+
+3 - yarn prisma migrate dev ou npx prisma migrate dev
+
+
+
+Elias Gabriel — Ontem às 17:45
+:arrow:Erro: Property ‘user_id’ does not exist on type ...
+
+Uma outra solução é adicionar a flag --transpile-only no script de "dev, lá no package.json
+"dev": "ts-node-dev --transpile-only --exit-child src/server.ts"
+
+
+Lembrando que após fazer isso, é preciso encerrar e iniciar novamente o servidor.

@@ -1,1 +1,21 @@
 pra usar o process.env é preciso instalar: yarn add dotenv;
+
+yarn prisma migrate dev
+
+
+
+Coisas informadas na aula:
+
+instale o prismaclient:
+ yarn add  @prisma/client 
+ yarn add  @prisma/client -D
+
+---x---x---x--x---x---x----x---
+
+Na configuração do prisma no package.json é preciso inserir o --exit-child
+caso contrário todas as alterações não mostrará em tempo real ( falo no sentido de salvar e não mostrar com o servidor ligado)
+
+"scripts": {
+    "dev": "ts-node-dev --exit-child src/app.ts"
+  },
+--x------------------------------------x--x--x-x---------------
