@@ -2,8 +2,34 @@ import "dotenv/config";
 
 import express from 'express';
 import { router } from "./routes";
+import http from "http";
+
+import cors from "cors";
+import { Server } from "socket.io";
+
+
 
 const app = express();
+
+app.use(cors());
+
+
+
+const serverHttp = http.createServer(app);
+
+
+const io = new Server(serverHttp, {
+
+    cors: {
+
+        origin: "*"
+    }
+});
+
+io.on("connection", socket => {
+
+    console.log(`user connected on socket ${socket.id}` )
+});
 
 app.use(express.json()); //important: informa para o express também receber dados via json
 
@@ -23,9 +49,8 @@ return response.json(code);
 
 })
 
-app.listen(4000, () => {
 
-console.log('RocketSeat, Server is Running on PORT 4000')
-});
+
+export { serverHttp, io } ;
 
 

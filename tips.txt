@@ -26,4 +26,20 @@ caso contrário todas as alterações não mostrará em tempo real ( falo no sen
 DENTRO DO TSCONFIG.JSON POSSO DIZER AO TYPESCRIPT ONDE ELE VAI LER MINHAS TIPAGENS CUSTOMIZADAS:
 
 "typeRoots": ["./src/@types", "node_modules/@types"] << exemplo ao lado a tipagem criada em src/@types customizada; no caso está dizendo que quero informar as duas pastas
+-x--x---x--
+https://socket.io/ download <<<< auxilia a autenticação entre client/server;
+
+yarn add socket.io
+
+--x--x-x--
+
+
+dependecias:
+
+cors >>> responsavel por permitir ou barrar as requisições dentro da apçlicação;
+para que outras aplicações possam se conectar à minha aplicação eu preciso permitir dentro do cors tanto pro http quanto pro io;
+yarn add cors
+yarn add @types/cors -D
+
+
 
