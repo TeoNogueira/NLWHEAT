@@ -2,7 +2,9 @@ pra usar o process.env é preciso instalar: yarn add dotenv;
 
 yarn prisma migrate dev
 
+yarn prisma studio
 
+Control Shift + P :>reload window para reinicializar a aplicação
 
 Coisas informadas na aula:
 
@@ -19,3 +21,9 @@ caso contrário todas as alterações não mostrará em tempo real ( falo no sen
     "dev": "ts-node-dev --exit-child src/app.ts"
   },
 --x------------------------------------x--x--x-x---------------
+
+
+DENTRO DO TSCONFIG.JSON POSSO DIZER AO TYPESCRIPT ONDE ELE VAI LER MINHAS TIPAGENS CUSTOMIZADAS:
+
+"typeRoots": ["./src/@types", "node_modules/@types"] << exemplo ao lado a tipagem criada em src/@types customizada; no caso está dizendo que quero informar as duas pastas
+
