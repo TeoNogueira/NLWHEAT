@@ -41,5 +41,12 @@ para que outras aplicações possam se conectar à minha aplicação eu preciso 
 yarn add cors
 yarn add @types/cors -D
 
+==x====x==
+
+findFirst() << tras uma mensagem
+
+findMany() << tras Mais de uma mensagem (infinitas msgs)
+
+--x---x-
 
 
