@@ -1,3 +1,11 @@
 My actions:
 
 important: style.module.css <<< className={styles.loginBoxWrapper} <<< classes css em style module.
+
+
+--x---
+Utilizar quaisquer tipos de icones para o react instale a dependencia:
+yarn add react-icons
+
+
+----x----x-----x------
