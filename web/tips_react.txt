@@ -6,6 +6,34 @@ important: style.module.css <<< className={styles.loginBoxWrapper} <<< classes c
 --x---
 Utilizar quaisquer tipos de icones para o react instale a dependencia:
 yarn add react-icons
-
-
 ----x----x-----x------
+
+toda vez que eu uso o map dentro do react eu sou obrigado no primeiro elemento html a propriedade key={} ex:
+
+
+ <ul className={styles.messageList}>
+       
+       {messages.map(message => {
+
+            return (
+
+        <li key={message.id} className={styles.message}>
+            <p className={styles.messageContent}>{message.text}</p>
+            <div className={styles.messageUser}>
+                <div className={styles.userImage}>
+                    <img src={message.user.avatar_url} alt={message.user.name} />
+                </div>
+                <span>{message.user.name}</span>
+            </div>
+        </li>
+        );
+    })}
+       </ul>
+
+       --x--x---x--x--x--x--x--x--x--x--x--x--x--
+
+    rodar yarn prisma studio
+    na pasta do node(backend) rodar yarn yarn dev
+stopped: 
+    --x----x----
+
