@@ -1,0 +1,21 @@
+https://github.com/settings/applications/1742530 >>> config NODE BACKEND:
+
+application description:
+
+NLW HEAT 2021
+
+Homepage URL * :
+
+Homepage URL
+http://localhost:4000
+
+
+X---X--X---X--X--X-X-X-X-X-X-X--XX
+Authorization callback URL *
+http://localhost:4000/signin/callback
+
+-X---X---X---X---X---X---X---X---X---X---X
+
+
+
+

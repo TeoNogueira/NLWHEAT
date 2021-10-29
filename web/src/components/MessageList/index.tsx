@@ -1,18 +1,19 @@
 import styles from './styles.module.scss';
-import { api } from '../../services/api'
-import logoImg from '../../assets/logo.svg'
+import { api } from '../../services/api';
+import logoImg from '../../assets/logo.svg';
 import { useEffect, useState } from 'react';
+
+
 
 type Message = {
 
     id: string;
     text: string;
-    user: {
+    user: { 
         name: string;
         avatar_url: string;
     }
 }
-
 
 export function MessageList() {
 
