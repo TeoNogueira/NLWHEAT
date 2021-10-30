@@ -3,9 +3,10 @@
 .sendMessageFormWrapper {
 
     background: #1b1b1f;
-    padding: 24px;
+    // margin-top: 50px;
+    padding-top: 24px;
     align-self: center;
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +40,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+
 
 .userImage {
 
@@ -57,28 +58,34 @@
         border: 6px solid #121214;
     }
 
-    .userName {
+    
+}
+
+
+.userName {
         
-        font-size: 24px;
-        line-height: 30px;
-        margin-top: 16px;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 16px;
 
-    }
+}
+
+.userGithub {
 
 
-    .userGithub {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    color: #c4c4cc;
 
-
-        display: flex;
-        align-items: center;
-        margin-top: 8px;
-        color: #c4c4cc;
-
-        svg{
-            margin-right: 8px;
-        }
+    svg{
+        margin-right: 8px;
     }
 }
+}
+
+
+
 
 .sendMessageForm {
 
@@ -112,8 +119,10 @@
             line-height: 24px;
             &:focus {
                 outline: 0;
-                placeholder: #8d8d99;
+            }
 
+            &::placeholder {
+               color: #8d8d99;
             }
         } 
         
@@ -136,7 +145,7 @@
             justify-content: center;
         
             &:hover {
-        
+                cursor: pointer;
                 filter: brightness(0.9);
                 
             }

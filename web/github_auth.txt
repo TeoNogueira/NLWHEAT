@@ -56,4 +56,10 @@ antes de tentar acessar o avatar ele checa o user!
 
 
 
+onChange={ event => setMessage(event.target.value) } ////pegando o valor digitado na textarea do HTML acoplado com o setMessage do useState('');
+
+
+
+---x---x--x-x-x-x--x-x-x-x-x-x-x-x--xx-x--x-x-x-x-x-x-x-x-x--x-x-x-x-x
+
 

@@ -37,3 +37,9 @@ toda vez que eu uso o map dentro do react eu sou obrigado no primeiro elemento h
 stopped: 
     --x----x----
 
+instaallll::
+PARA OUVIR COISAS EM TEMPO REAL INSTALE O WEBSOCKET CLIENT
+
+yarn add socket.io-client
+---x-x-x------
+

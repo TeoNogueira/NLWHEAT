@@ -1,4 +1,5 @@
 import { createContext, ReactNode, useEffect, useState } from "react";
+
 import { api } from "../services/api";
 
 
@@ -32,6 +33,7 @@ type AuthResponse = {
     
     
     }
+
     
 
 
@@ -63,6 +65,8 @@ async function signIn(githubCode: string) {
     
     
     localStorage.setItem('@dowhile:token', token);
+    api.defaults.headers.common.authorization = `Bearer ${token}`;
+
     
     console.log(user)
     
@@ -85,7 +89,7 @@ function signOut() {
         const token = localStorage.getItem('@dowhile:token');
          
         if(token) {
-            api.defaults.headers.common.authorization = `Bearer ${token}`
+            api.defaults.headers.common.authorization = `Bearer ${token}`;
 
             api.get<User>('profile').then(response => {
 
