@@ -45,7 +45,7 @@ useEffect(() => {
 
             messagesQueue.shift()
         } 
-    }, 3000);
+    }, 1000);
 
 }, [])
 

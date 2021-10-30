@@ -33,7 +33,7 @@ return(
 
 <button onClick={signOut} className={styles.signOutButton}>
 
-<VscSignOut size="32" />
+<VscSignOut size="24" />
 
 </button>
 
