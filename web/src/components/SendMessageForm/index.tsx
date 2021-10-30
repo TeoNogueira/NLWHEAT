@@ -17,11 +17,11 @@ return(
 <div className={styles.sendMessageFormWrapper}>
 
 
-<button className={styles.sigInOutButton}>
+<div className={styles.signOutButton}>
 
 <VscSignOut size="32" />
 
-</button>
+</div>
 
 <header className={styles.userInformation}>
 <div className={styles.userImage}>
