@@ -16,6 +16,23 @@ http://localhost:4000/signin/callback
 
 -X---X---X---X---X---X---X---X---X---X---X
 
+tudo o que eu quiser passar informação de uma informação eu ponho no AuthContextProvider, no caso posso colocar todos os componentes que quiser, exemplo: que todos eles leiam uma autenticação (Todas as páginas(components que criei))
+
+
+<AuthContextProvider value={null} >
+
+    {props.children}
+</AuthContextProvider>
+
+
+--x---x--x-x--x-x-x-
+
+
+propriedade children: É o que eu coloco dentro desse elemento, children é o que eu incluo dentro desse component 
+===x===x===x==x=x==x=x==x=x=x==x=x=x=x=x=x=x=x=x
+
+Um context é nada mais que um compartilhamento de informações entre vários contextos;
+
 
 
 
