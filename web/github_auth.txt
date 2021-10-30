@@ -32,6 +32,27 @@ propriedade children: É o que eu coloco dentro desse elemento, children é o qu
 ===x===x===x==x=x==x=x==x=x=x==x=x=x=x=x=x=x=x=x
 
 Um context é nada mais que um compartilhamento de informações entre vários contextos;
+---x---x-x--x-x-x-x-x--x-x-x-x-x--x-x-x-x-x-x-x--x-x-x-x-x-x-x-x-x-x-x-x
+
+
+Em react dois pontos de exclamação !! transforma em boolean True or False:
+
+{ !!user} >> tbm pode ser assim >> { Bolean(user)}
+
+{!!user ? <SendMessageForm/> : <LoginBox />} << tratativa do código em Boolean !! + if ternário;
+
+
+---x---x--x-x-x-x--x-x-x-x-x-x-x-x--xx-x--x-x-x-x-x-x-x-x-x--x-x-x-x-x
+
+Verificando se está nulo ou não ponha ponto de interrogação: 
+
+<img src={user?.avatar_url} alt="" />
+
+antes de tentar acessar o avatar ele checa o user!
+
+---x---x--x-x-x-x--x-x-x-x-x-x-x-x--xx-x--x-x-x-x-x-x-x-x-x--x-x-x-x-x
+
+
 
 
 

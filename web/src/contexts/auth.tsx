@@ -16,6 +16,7 @@ type AuthContextData = {
 
 user: User | null;
 signInUrl: string;
+signOut: () => void;
 
 }
 
@@ -70,6 +71,8 @@ async function signIn(githubCode: string) {
 
 function signOut() {
 
+    setUser(null);
+    localStorage.removeItem('@dowhile:token');
     
 }
 
@@ -114,7 +117,7 @@ function signOut() {
 
 return(
 
-<AuthContext.Provider value={{ signInUrl, user }} >
+<AuthContext.Provider value={{ signInUrl, user, signOut }} >
 
     {props.children}
 </AuthContext.Provider>
