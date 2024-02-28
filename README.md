@@ -7,10 +7,10 @@
 
 </div>
 
-## NLWHeatDoWhile
+## NLWHeat
  
 <p>This app was developed in a programming course of reactJs of the <a target="_blank" href="https://app.rocketseat.com.br/">Rocketseat</a> online school, in the Next Level Week event for programing of all levels.</p>
-<p>This app is a SPA bootstrapped with <a target="_blank" href="https://vitejs.dev/">[ViteJs]</a> and, basically, creates a place that you can send a message to say what you think about the DoWhile event that is coming soon.</p>
+<p>This app is a SPA bootstrapped with <a target="_blank" href="https://vitejs.dev/">[ViteJs]</a> and, basically, creates a place that you can send a message to say what you think about the NLW event that is coming soon.</p>
  
  
 ## Technology 
@@ -71,4 +71,4 @@ To learn React, check out the <a target="_blank" href="https://reactjs.org/">[Re
 
 <p>I hope it help you like it helped me too! Thanks for see it and give a repo star if you like it!</p>
 
-# NLWHeatDoWhile
+# NLWHeat
